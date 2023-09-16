@@ -1,0 +1,142 @@
+* {
+    transition: all 0.2s ease-in;
+    text-transform: capitalize;
+    font-family: 'Arial', sans-serif;
+    box-sizing: border-box;
+    font-weight: 400;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width:10px;
+}
+
+::-webkit-scrollbar-track {
+    background: gray;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background:red;
+}
+
+.container {
+    padding:10px;
+    margin:0 20px;
+}
+
+.navbar {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:5px;
+    left:0;
+    width:100%;
+    top:0;
+    background: #fff;
+    z-index:10;
+    height:70px;
+    position:absolute;
+    
+}
+
+.home {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left:20px;
+}
+
+.home a {
+    font-size:20px;
+    color:darkblue;
+    padding-left:10px;
+    text-decoration: none;
+}
+
+.home a:hover {
+    color:red;
+}
+
+.menu {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu a {
+    text-decoration: none;
+    padding-right:20px;
+    color:darkblue;
+    font-size: 20px;
+}
+
+.menu a:hover {
+    color:red;
+}
+
+.btn {
+    padding: 12px 15px;
+    color:white;
+    background:red;
+    outline:none;
+    font-size: 17px;
+    border:none;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.btn:hover {
+    color:white;
+    background:rgb(5, 95, 186);
+    transform: scaleY(1.10);
+}
+
+
+.title {
+    font-size: 50px;
+    color:darkblue;
+    font-weight:bold;
+}
+.sub-title {
+    font-size: 18px;
+    color:darkblue;
+    word-spacing: 3px;
+}
+
+#intro {
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:10px;
+    align-items: center;
+    padding:20px;
+    margin-top:100px;
+}
+.img {
+    width:500px;
+    height:auto;
+}
+.img>img {
+    width:500px;
+    height:auto;
+}
+
+.sub-heading {
+    font-size:45px;
+    color:darkblue;
+    text-align: center;
+}
+.heading {
+    color:darkblue;
+    font-size: 20px;
+    text-align:center;
+}
+#features {
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:10px;
+    align-items: center;
+    padding:20px;
+    margin-top:30px;
+}
+
+
