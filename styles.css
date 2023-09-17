@@ -124,13 +124,11 @@
     font-size:45px;
     color:darkblue;
     text-align: center;
-    padding-bottom:10px;
 }
 .heading {
     color:darkblue;
     font-size: 20px;
     text-align:center;
-    padding-bottom:10px;
 }
 #features {
     display:grid;
@@ -175,9 +173,138 @@
     display:grid;
     grid-template-columns: repeat(2, 1fr);
     gap:10px;
-    align-items: center;
+    align-items: left;
     padding:20px;
     margin-top:30px;
+}
+
+.heading-services {
+    text-align: left;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.sub-heading-services {
+    text-align: left;
+    font-size: 35px;
+    padding-left:15px;
+    font-weight: bolder;
+    color:darkblue;
+}
+
+.service1 {
+    padding:2px;
+    width:400px;
+    background-color: hsl(0, 4%, 82%);
+    border-radius:10px;
+    margin-bottom:20px;
+}
+.service2 {
+    padding:2px;
+    width:400px;
+    background-color: hsl(0, 4%, 82%);
+    border-radius:10px;
+    margin-bottom:20px;
+    margin-left:50px;
+}
+.service3 {
+    padding:2px;
+    width:400px;
+    background-color: hsl(0, 4%, 82%);
+    border-radius:10px;
+    margin-bottom:20px;
+}
+.service4 {
+    padding:2px;
+    width:400px;
+    background-color: hsl(0, 4%, 82%);
+    border-radius:10px;
+    margin-bottom:20px;
+    margin-left:50px;
+}
+
+.service-item {
+    font-size:18px;
+    padding-left:30px;
+    font-weight: bold;
+    color:black;  
+}
+
+#blog {
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    align-items: center;
+    justify-content: center;
+    padding:10px;
+    gap:20px;
+}
+.blog-card {
+    background-color: beige;
+    border-radius: 10px; 
+}
+
+.blog-card:hover .blog-image {
+    cursor: pointer;
+    transform:scale(1.08);
+    transition: .3s linear;
+}
+
+.blog-card:hover .blog-sub-title  {
+    cursor: pointer;
+    color:red;
+}
+
+.blog-image-container {
+    width:auto;
+    height:auto;
+    overflow: hidden;
+}
+
+.blog-image {
+    object-fit: cover;
+    width:100%;
+    height:auto;
+}
+
+.blog-content {
+    margin: 20px 20px;
+}
+
+.blog-title {
+    display:flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap:30px;
+}
+
+.blog-sub-title {
+    color:darkblue;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 1px;
+}
+
+.menus >a {
+    text-decoration: none;
+    display:block;
+    font-size: 20px;
+    font-weight:bold;
+    color:red;
+    padding:20px;
+}
+.nav{
+    position: absolute;
+    display:none;
+    text-decoration:none;
+    place-items: center;
+    top:10%;
+    left:0;
+    right:0;
+    height:100vh;
+    z-index:10;
+    background-color: aqua;
+    text-align: center;
+    padding:10px;
 }
 
 
@@ -187,11 +314,7 @@
 
 
 
-
-
-
-
-@media  (max-width: 600px){
+@media  (max-width: 768px){
     #features{
         grid-template-columns:100%;
     }
@@ -200,6 +323,22 @@
     }
     #services {
         grid-template-columns: 100%;
+    }
+    .menu {
+        display:none;
+    }
+    .service1, .service2, .service3,.service4 {
+        margin-left:0;
+        width:100%;
+    }
+    #blog {
+        grid-template-columns: 100%;
+    }
+    #get-started-btn{
+        display:none;
+    }
+    .nav {
+        display:block;
     }
     }
 
