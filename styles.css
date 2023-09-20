@@ -230,16 +230,16 @@
     color:black;  
 }
 
-.fa-circle-check {
+.fa-check {
     margin-right:15px;
-    padding:8px;
+    padding:10px 11px;
     border-radius:50%;
     background:rgb(231, 219, 219);
     color:rgb(16, 16, 46);
     font-size:18px;
 }
 
-.service-item:hover .fa-circle-check {
+.service-item:hover .fa-check {
     background: red;
     color:white;
     transform:scale(1.02);
