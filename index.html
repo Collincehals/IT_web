@@ -11,7 +11,7 @@
 <body>
     <header class="navbar">
         <div class="home">
-            <img src="/images/favicon.svg">
+            <img class="home-favicon" src="/images/favicon.svg">
             <a href="/">Colltech IT Solutions</a>
         </div>
         <nav>
@@ -24,7 +24,7 @@
             </ul>
         </nav>
         <div>
-            <button id="get-started-btn" class="btn">Get Started</button>
+            <button id="get-started-btn" class="nav-btn">Get Started<i class="chevron fa-solid fa-chevron-right"></i></button>
         </div>
     </header>
 <!--Menu bars for small and medium devices-->
@@ -43,7 +43,7 @@
             <div>
                 <h1 class="title">Secure IT solutions<br> for a more secure <br>environment</h1>
                 <p class="sub-title">Velit hendrerit sit auctor tempor sem. Congue mi tempor condimentum felis arcu, non cursus. Nulla pharetra porttitor sed platea arcu et leo odio.</p>
-                <button class="btn">Get Started Now</button>
+                <button class="btn">Get Started Now<i class="chevron fa-solid fa-chevron-right"></i></button>
             </div>
             <div class="img">
                 <img src="/images/hero-banner.png" alt="">
@@ -149,20 +149,6 @@
                     <p class="blog-sub-title">How is technology working with new things?</p>
                 </div>
             </div>
-
-            <div class="blog-card">
-                <div class="blog-image-container">
-                    <img class="blog-image" src="/images/blog-2.jpg">
-                </div>
-                <div class="blog-content">
-                    <div class="blog-title">
-                        <h3>DESIGN</h3>
-                        <h3>25TH NOV. 2023</h3>
-                    </div>
-                    <p class="blog-sub-title">Top 10 important tips on IT services & design</p>
-                </div>
-            </div>
-
             <div class="blog-card">
                 <div class="blog-image-container">
                     <img class="blog-image" src="/images/blog-3.jpg">
@@ -175,12 +161,24 @@
                     <p class="blog-sub-title">How our company works in different ways</p>
                 </div>
             </div>
+            <div class="blog-card">
+                <div class="blog-image-container">
+                    <img class="blog-image" src="/images/blog-2.jpg">
+                </div>
+                <div class="blog-content">
+                    <div class="blog-title">
+                        <h3>DESIGN</h3>
+                        <h3>25TH NOV. 2023</h3>
+                    </div>
+                    <p class="blog-sub-title">Top 10 important tips on IT services & design</p>
+                </div>
+            </div>
         </div> 
     </section>
 
     <section class="container">
         <div id="newsletter">
-            <div>
+            <div class="newsletter-content">
                 <h4 class="newsletter-heading">Subscribe Our Newsletter</h4>
                 <h1 class="newsletter-sub-heading">The latest resources, sent to your inbox weekly</h1>
                 <div class="form-group">
@@ -188,7 +186,7 @@
                         <input type="email" name="email" placeholder="Enter Your Email Address">
                     </form>
                     <div>
-                        <button type="submit" class="btn">Subscribe Now<i class="chevron fa-solid fa-chevron-right"></i></button>
+                        <button type="submit" class="subscribe-btn">Subscribe Now<i class="chevron fa-solid fa-chevron-right"></i></button>
                     </div>
                 </div> 
             </div>

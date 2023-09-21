@@ -5,6 +5,8 @@
     box-sizing: border-box;
     font-weight: 400;
     scroll-behavior: smooth;
+    margin:0;
+    padding:0;
 }
 
 ::-webkit-scrollbar {
@@ -29,7 +31,7 @@
     display:flex;
     justify-content: space-between;
     align-items: center;
-    padding:5px;
+    padding:40px;
     left:0;
     width:100%;
     top:0;
@@ -47,69 +49,97 @@
     margin-left:20px;
 }
 
+.home-favicon {
+    width:50px;
+    height:auto;
+}
+
 .home a {
-    font-size:20px;
+    font-size:21px;
     color:darkblue;
     padding-left:10px;
     text-decoration: none;
+    font-weight: 600;
 }
 
 .home a:hover {
     color:red;
+    transition: .1s linear;
 }
 
 .menu {
     display:flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
 .menu a {
     text-decoration: none;
-    padding-right:20px;
-    color:darkblue;
-    font-size: 20px;
+    padding-right:30px;
+    color:rgb(16, 16, 113);
+    font-size: 18px;
+    font-weight:600;
 }
 
 .menu a:hover {
     color:red;
 }
 
-.btn {
-    padding: 12px 15px;
+.nav-btn {
+    padding: 12px 30px;
     color:white;
     background:red;
     outline:none;
     font-size: 17px;
     border:none;
-    border-radius: 8px;
-    margin-right: 20px;
+    border-radius: 5px;
+    margin-right:20px;
 }
 
+.nav-btn:hover {
+    color:white;
+    background:rgb(5, 95, 186);
+    transform: scale(1.05);
+    cursor:pointer;
+}
+
+.btn {
+    padding: 12px 30px;
+    color:white;
+    background:red;
+    outline:none;
+    font-size: 17px;
+    border:none;
+    border-radius: 5px;
+    margin-left:15px;
+}
 .btn:hover {
     color:white;
     background:rgb(5, 95, 186);
-    transform: scaleY(1.10);
+    transform: scaleX(1.05);
+    cursor:pointer;
 }
-
 
 .title {
     font-size: 50px;
-    color:darkblue;
+    color:rgb(16, 16, 113);
     font-weight:bold;
+    padding:10px;
 }
 .sub-title {
-    font-size: 18px;
-    color:darkblue;
+    font-size: 20px;
+    color:rgb(16, 16, 113);
     word-spacing: 3px;
+    padding:10px 15px;
 }
 
 #intro {
     display:grid;
     grid-template-columns: repeat(2, 1fr);
-    gap:10px;
+    gap:20px;
     align-items: center;
     padding:20px;
-    margin-top:100px;
+    margin-top:80px;
 }
 .img {
     width:500px;
@@ -122,13 +152,15 @@
 
 .sub-heading {
     font-size:45px;
-    color:darkblue;
+    color:rgb(16, 16, 113);
     text-align: center;
+    padding-bottom:30px;
 }
 .heading {
-    color:darkblue;
+    color:rgb(16, 16, 113);
     font-size: 20px;
     text-align:center;
+    padding-bottom:15px;
 }
 #features {
     display:grid;
@@ -143,24 +175,27 @@
     color:red;
     font-size:17px;
     font-weight: 600;
+    padding:10px 0;
 }
 .feature-link:hover {
     text-decoration: underline;
-    color:darkblue;
+    color:rgb(16, 16, 113);
     letter-spacing: 1px;
 }
 
 .feature-title {
-    color:darkblue;
+    color:rgb(16, 16, 113);
     font-size: 24px;
     text-align:left;
     font-weight:600;
+    padding:10px 0;
 }
 .feature-sub-title {
     color:rgb(14, 8, 8);
     font-size: 20px;
     text-align:left;
     font-weight:500;
+    padding:10px 0;
 }
 .chevron {
     margin-left:6px;
@@ -182,59 +217,60 @@
     text-align: left;
     font-size: 20px;
     font-weight: bolder;
+    padding-bottom:15px;
 }
 
 .sub-heading-services {
     text-align: left;
     font-size: 35px;
-    padding-left:15px;
     font-weight: bolder;
-    color:darkblue;
+    color:rgb(18, 18, 110);
+    padding-bottom:30px;
 }
 
 .service1 {
-    padding:2px;
-    width:400px;
-    background-color: hsl(0, 4%, 82%);
+    padding:15px;
+    width:450px;
+    background-color: hwb(0 92% 7%);
     border-radius:10px;
-    margin-bottom:20px;
+    margin-bottom:25px;
 }
 .service2 {
-    padding:2px;
-    width:400px;
-    background-color: hsl(0, 4%, 82%);
+    padding:15px;
+    width:450px;
+    background-color: hwb(0 92% 7%);
     border-radius:10px;
-    margin-bottom:20px;
+    margin-bottom:25px;
     margin-left:50px;
 }
 .service3 {
-    padding:2px;
-    width:400px;
-    background-color: hsl(0, 4%, 82%);
+    padding:15px;
+    width:450px;
+    background-color: hwb(0 92% 7%);
     border-radius:10px;
-    margin-bottom:20px;
+    margin-bottom:25px;
 }
 .service4 {
-    padding:2px;
-    width:400px;
-    background-color: hsl(0, 4%, 82%);
+    padding:15px;
+    width:450px;
+    background-color: hwb(0 92% 7%);
     border-radius:10px;
-    margin-bottom:20px;
+    margin-bottom:25px;
     margin-left:50px;
 }
 
 .service-item {
-    font-size:18px;
+    font-size:19px;
     padding-left:30px;
     font-weight: bold;
-    color:black;  
+    color:rgb(18, 18, 110); 
 }
 
 .fa-check {
     margin-right:15px;
     padding:10px 11px;
     border-radius:50%;
-    background:rgb(231, 219, 219);
+    background:white;
     color:rgb(16, 16, 46);
     font-size:18px;
 }
@@ -255,7 +291,7 @@
     gap:20px;
 }
 .blog-card {
-    background-color: beige;
+    background-color: hwb(0 92% 7%);
     border-radius: 10px; 
 }
 
@@ -291,22 +327,14 @@
     justify-content: flex-start;
     flex-wrap: wrap;
     gap:30px;
+    margin-bottom:15px;
 }
 
 .blog-sub-title {
-    color:darkblue;
+    color:rgb(18, 18, 110); 
     font-size: 22px;
     font-weight: bold;
-    margin-top: 1px;
-}
-
-.menus >a {
-    text-decoration: none;
-    display:block;
-    font-size: 20px;
-    font-weight:bold;
-    color:red;
-    padding:20px;
+    margin-bottom: 20px;
 }
 
 #newsletter {
@@ -314,36 +342,40 @@
     grid-template-columns: repeat(2, 1fr);
     gap:30px;
     align-items: left;
-    padding:20px;
+    padding:30px;
     margin-top:30px;
 }
-
+.newsletter-content {
+    margin-top:120px;
+}
 .newsletter-heading {
-    font-size:20px;
+    font-size:19px;
     color:black;
     font-weight: 500;
+    padding-bottom:12px;
 }
 
 .newsletter-sub-heading {
-    font-size:45px;
-    color:darkblue;
+    font-size:40px;
+    color:rgb(18, 18, 110); 
     text-align: left;
     font-weight:600;
-    padding-left:50px;
+    padding-bottom:30px;
 }
 
 .form-group {
     display:flex;
     flex-wrap: wrap;
-    gap:20px;
+    gap:10px;
     justify-content: flex-start;
     align-items: center;
 }
 .form >input {
-    padding:15px;
+    padding:18px;
     width:350px;
-    border-radius:8px;
-    background-color: hsl(0, 0%, 100%);
+    font-size: 19px;
+    border-radius:6px;
+    background-color: white;
     outline:none;
     border:1px solid #ccc;
     
@@ -352,21 +384,25 @@
 .form >input:focus {
     border:1px solid rgba(255,0,0,0.7);
 }
-
-.nav{
-    position: absolute;
-    display:none;
-    text-decoration:none;
-    place-items: center;
-    top:10%;
-    left:0;
-    right:0;
-    height:100vh;
-    z-index:10;
-    background-color: #c6d7d7;
-    text-align: center;
-    padding:10px;
+.subscribe-btn {
+    padding: 18px 25px;
+    color:white;
+    background:red;
+    outline:none;
+    font-size: 17px;
+    border:none;
+    border-radius: 5px;
+    margin-right:20px;
 }
+
+.subscribe-btn:hover {
+    color:white;
+    background:rgb(5, 95, 186);
+    transform: scaleY(1.05);
+    box-decoration-break: slice;
+    cursor:pointer;
+}
+
 
 #footer-container {
     background-color:rgb(239, 232, 232);
@@ -380,17 +416,20 @@
     display:grid;
     grid-template-columns: repeat(4, 1fr);
     gap:20px;
+    justify-content: center;
     padding:20px;
     z-index:10;
     color:hsl(240, 65%, 18%);
 }
 .about-content {
-    font-size: 17px;
+    font-size: 18px;
     color:hsl(240, 65%, 18%);
+    padding-bottom:10px;
+    word-spacing: 3px;
 }
 
 .location {
-    font-size: 17px;
+    font-size: 18px;
     color:hsl(240, 65%, 18%);
 }
 
@@ -434,7 +473,7 @@
     background:#fff;
     border-radius:6px;
     align-items:center;
-    padding:10px;
+    padding:15px;
     height: 120px;
 }
 .contact-item {
@@ -442,6 +481,7 @@
     font-weight:500;
     text-decoration: none;
     color:hsl(240, 65%, 18%);
+   
 }
 .contact-item:hover {
     color:red;
@@ -455,9 +495,10 @@
 
 h2{
     font-weight:bolder;
+    padding-bottom:10px;
 }
 #extra-quicklinks {
-    margin-top:70px;
+    margin-top:40px;
 }
 .footer-logo {
     display:flex;
@@ -481,7 +522,7 @@ h2{
     font-size: 17px;
     color:white;
     margin-bottom:0;
-    padding:20px;
+    padding:25px;
     left:0;
     bottom:0;
     right:0;
@@ -513,6 +554,24 @@ h2{
     cursor:pointer;
 }
 
+.nav{
+    position: absolute;
+    display:none;
+    text-decoration:none;
+    place-items: center;
+    top:10%;
+    left:0;
+    right:0;
+    height:100vh;
+    z-index:10;
+    background-color: #c6d7d7;
+    text-align: center;
+    padding:10px;
+}
+
+
+
+
 
 
 /* Media Queries */
@@ -541,9 +600,6 @@ h2{
     }
     #get-started-btn{
         display:none;
-    }
-    .nav {
-        display:block;
     }
     .footer {
         grid-template-columns:100%;
