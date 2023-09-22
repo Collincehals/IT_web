@@ -137,12 +137,14 @@ html {
 }
 
 #intro {
+    position: relative;
     display:grid;
     grid-template-columns: repeat(2, 1fr);
     gap:20px;
     align-items: center;
     padding:20px;
-    margin-top:80px;
+    margin-top:50px;
+    margin-bottom:130px;
 }
 .img {
     width:500px;
@@ -164,6 +166,29 @@ html {
     font-size: 20px;
     text-align:center;
     padding-bottom:15px;
+}
+.shape1 {
+    position:absolute;
+    left:-30px;
+    top:-50px;
+    z-index: -10;
+    height:100vh;
+    overflow:hidden;
+}
+.shape2 {
+    position:absolute;
+    left:25%;
+    bottom:-80px;
+    z-index: -10;
+    overflow:hidden;
+}
+.shape3 {
+    position:absolute;
+    right:-30px;
+    top:-50px;
+    z-index: -10;
+    height:100vh;
+    overflow:hidden;
 }
 #features {
     display:grid;
@@ -300,11 +325,11 @@ html {
 
 .blog-card:hover .blog-image {
     cursor: pointer;
-    transform:scale(1.08);
-    transition: .3s linear;
+    transform:scale(1.10);
+    transition: .4s linear;
 }
 
-.blog-card:hover .blog-sub-title  {
+.blog-sub-title:hover  {
     cursor: pointer;
     color:red;
 }
@@ -329,15 +354,22 @@ html {
     display:flex;
     justify-content: flex-start;
     flex-wrap: wrap;
-    gap:30px;
+    font-size:13px;
+    gap:25px;
     margin-bottom:15px;
 }
 
 .blog-sub-title {
     color:rgb(18, 18, 110); 
-    font-size: 22px;
+    font-size: 20px;
     font-weight: bold;
     margin-bottom: 20px;
+}
+
+.fa-calendar-check, .fa-tags{
+    color:red;
+    margin-right:10px;
+    font-size:17px;
 }
 
 #newsletter {
@@ -388,6 +420,7 @@ html {
     border:1px solid rgba(255,0,0,0.7);
 }
 .subscribe-btn {
+    position:relative;
     padding: 18px 25px;
     color:white;
     background:red;
@@ -608,34 +641,45 @@ h2{
         grid-template-columns:100%;
     }
     .img {
-        width:100%;
+        width:80%;
         height:auto;
     }
     .img>img {
-        width:100%;
+        width:80%;
         height:auto;
+    }
+    .subscribe-btn {
+        width:100%;
+        padding: 15px 20px;
+        font-size: 16px;
+
     }
     .form >input {
         padding:15px;
         width:100%;
-        font-size: 17px;
-    }
-    .subscribe-btn {
-        padding: 15px 20px;
         font-size: 16px;
-        margin-right:10px;
-        width: 100%;
     }
     .title, .sub-heading {
-        font-size: 35px;
+        font-size:30px;
+    }
+    .social-media-icons {
+        gap:10px;
+        margin:10px auto;
+    }
+    .footer-bottom-item {
+        margin:10px auto;
+        text-align: center;
+    }
     }
 
-}
-
-
-@media (min-width: 1000px) {
-    .container {
-        padding:10px;
-        margin:0 100px;
+@media screen and (max-width: 991px) {
+    .shape1, .shape2, .shape3 {
+        display: none;
     }
+    
+
 }
+    
+
+
+
