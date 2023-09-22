@@ -8,6 +8,9 @@
     margin:0;
     padding:0;
 }
+html {
+    overflow-x:hidden;
+}
 
 ::-webkit-scrollbar {
     width:10px;
@@ -604,10 +607,35 @@ h2{
     .footer {
         grid-template-columns:100%;
     }
+    .img {
+        width:100%;
+        height:auto;
+    }
+    .img>img {
+        width:100%;
+        height:auto;
+    }
+    .form >input {
+        padding:15px;
+        width:100%;
+        font-size: 17px;
+    }
+    .subscribe-btn {
+        padding: 15px 20px;
+        font-size: 16px;
+        margin-right:10px;
+        width: 100%;
+    }
+    .title, .sub-heading {
+        font-size: 35px;
     }
 
-
-    
-
+}
 
 
+@media (min-width: 1000px) {
+    .container {
+        padding:10px;
+        margin:0 100px;
+    }
+}
