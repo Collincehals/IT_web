@@ -1,4 +1,7 @@
-const menubar = document.getElementById('menu-bars');
-const navbar = document.getElementById('.nav');
+const menubar = document.querySelector('#menu-bars');
+const menu = document.querySelector('.menu');
 
-menubar.onclick = classList.toggle('active')
+menubar.addEventListener("click", function () {
+    menubar.classList.toggle("fa-times");
+    menu.classList.toggle("active");
+});

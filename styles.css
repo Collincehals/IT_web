@@ -589,36 +589,11 @@ h2{
     transition:.3s ease-in-out;
     cursor:pointer;
 }
-
-.menus>a {
-    display:block;
-    font-size:22px;
-    text-decoration: none;
-    font-weight: 600;
-    color:rgb(19, 19, 74);
-    padding:20px;
-}
-.nav{
-    position: absolute;
-    display:none;
-    text-decoration:none;
-    place-items: center;
-    top:10%;
-    left:0;
-    right:0;
-    height:50%;
-    z-index:10;
-    background-color: #fff;
-    box-shadow:0 0 2px 0 rgba(0, 0, 0,.4);
-    text-align: center;
-}
 #menu-bars {
     font-size: 22px;
     color:rgb(19, 19, 74);
     display:none;
 }
-
-
 
 
 
@@ -632,9 +607,6 @@ h2{
     }
     #services {
         grid-template-columns: 100%;
-    }
-    .menu {
-        display:none;
     }
     .service1, .service2, .service3,.service4 {
         margin-left:0;
@@ -664,7 +636,6 @@ h2{
         width:100%;
         padding: 15px 20px;
         font-size: 16px;
-
     }
     .form >input {
         padding:15px;
@@ -697,7 +668,34 @@ h2{
     .shape1, .shape2, .shape3 {
         display: none;
     }
+    .menu {
+        position:absolute;
+        left:0;
+        right:0;
+        top:100%;
+        background:#fff;
+        padding:20px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        clip-path: polygon(0 0,100% 0, 100% 0, 0 0);
+        transition: .3s linear;
+    }
+    .menu a {
+        display:block;
+        padding:20px;
+        margin-bottom:20px;
+        color:rgb(16, 16, 113);
+        font-size: 22px;
+        font-weight:600;
+    }
+    .menu.active {
+        clip-path: polygon(0 0,100% 0, 100% 100%, 0 100%);
+    }
+    
     #menu-bars {
+        font-size: 22px;
+        color:rgb(19, 19, 74);
         display:block;
     }
     }
